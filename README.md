@@ -3,9 +3,10 @@ Originally Forked from https://github.com/netvolt/LinuxRMM-Script
 
 If you don't mind running unsigned Linux agents, you can install them for Tactical RMM with this script. 
 
-If you want to use TacticalRMM to use this script to deploy the new agents for you, upload the 'tactical_rmm_update_linux_agents.sh' file in this repository to Settings -> Script Manager in your TRMM console, and then instruct the system to run it on your Linux agents. 
+# Super Easy Way - If your already have TacticalRMM Agents Running
+If you want to use TacticalRMM to use this script to deploy the new agents for you (using the older installed agent), upload the `https://github.com/ZenDevMaster/LinuxRMM-Script/blob/main/tactical_rmm_update_linux_agents.sh` file in this repository to Settings -> Script Manager in your TRMM console, and then instruct the system to run it on your Linux agents. Set a long timeout so the system will let it run for at least a few minutes.
 
-# Usage
+# Manual Usage
 Download the script that matches your configuration
 
 ### Tips
