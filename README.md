@@ -1,20 +1,18 @@
 # rmmagent-script
-Script for one-line installing and update of tacticalRMM agent
+Originally Forked from https://github.com/netvolt/LinuxRMM-Script
 
-> Now x64, x86, arm64 and armv6 scripts are available but only x64 and i386 tested on Debian 11 and Debian 10 on baremetal, VM (Proxmox) and VPS(OVH)
-> Tested on raspberry 2B+ with armv7l (chose armv6 on install)
+If you don't mind running unsigned Linux agents, you can install them for Tactical RMM with this script. 
 
-Script for other platform will be available futher as I adapt script on other platform.
-Feel free to adapt script and submit me !
+If you want to use TacticalRMM to use this script to deploy the new agents for you, upload the 'tactical_rmm_update_linux_agents.sh' file in this repository to Settings -> Script Manager in your TRMM console, and then instruct the system to run it on your Linux agents. 
 
 # Usage
-Download the script that match your configuration
+Download the script that matches your configuration
 
 ### Tips
 
-Download script with this url: `https://raw.githubusercontent.com/netvolt/LinuxRMM-Script/main/rmmagent-linux.sh`
+Download script with this url: `https://raw.githubusercontent.com/ZenDevMaster/LinuxRMM-Script/main/rmmagent-linux.sh`
 
-For Ubuntu systems try: 'wget https://raw.githubusercontent.com/netvolt/LinuxRMM-Script/main/rmmagent-linux.sh'
+For Ubuntu systems try: 'wget https://raw.githubusercontent.com/ZenDevMaster/LinuxRMM-Script/main/rmmagent-linux.sh'
 Make executable after downloading: 'sudo chmod +x rmmagent-linux.sh'  
 
 ### Fix Blank Screen for Ubuntu Workstations (Ubuntu 16+)
@@ -39,13 +37,14 @@ The argument are:
 
 2. System type
 
-  Type of system. Can be 'amd64' 'x86' 'arm64' 'armv6'  
+  System types can be 'amd64' 'x86' 'arm64' 'armv6'  
 
 3. Mesh agent
 
   The url given by mesh for installing new agent.
   Go to mesh.fqdn.com > Add agent > Installation Executable Linux / BSD / macOS > **Select the good system type**
   Copy **ONLY** the URL with the quote.
+  (note that mesh.fqdn.com is the mesh URL for your TacticalRMM server)
   
 4. API URL
 
