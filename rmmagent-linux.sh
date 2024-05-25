@@ -157,6 +157,7 @@ function go_install() {
                 rm /tmp/golang.tar.gz
                 export GOPATH=/usr/local/go
                 export GOCACHE=/root/.cache/go-build
+                export PATH=$PATH:/usr/local/go/bin
 
                 echo "Go is installed (version $go_current_version)."
         else
@@ -187,7 +188,7 @@ function go_install() {
                         rm /tmp/golang.tar.gz
                         export GOPATH=/usr/local/go
                         export GOCACHE=/root/.cache/go-build
-
+                        export PATH=$PATH:/usr/local/go/bin
                         echo "Go $go_version installed."
                 else
                         echo "Go is up to date (version $go_current_version)."
