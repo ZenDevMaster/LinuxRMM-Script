@@ -77,10 +77,10 @@ The argument are:
 
 ## Update
 
-Simply launch the script that match your system with *update* as argument.
+Simply launch the script that match your system with *update* as argument and the system type.
 
 ```bash
-./rmmagent-linux.sh update
+./rmmagent-linux.sh update ('amd64' | 'x86' | 'arm64' | 'armv6')
 ```
 
 ## Uninstall
